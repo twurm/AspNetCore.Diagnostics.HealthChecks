@@ -12,7 +12,7 @@ You can use environment variables to configure all properties on *HealthChecksUI
 ```bash
 docker run --name ui -p 5000:80 -e 'HealthChecksUI:HealthChecks:0:Name=httpBasic' -e 'HealthChecksUI:HealthChecks:0:Uri=http://the-healthchecks-server-path' -d xabarilcoding/healthchecksui:latest
 ```
-
+Based on the example above, the URL for the HealthCheckUI would be http://[machine]:5000/healthchecks-ui.
 ## Azure App Configuration Service
 
 Since version 2.2.32, our docker image supports configuration by using Azure App Configuration service.
